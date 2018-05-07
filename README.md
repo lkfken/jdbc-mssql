@@ -26,6 +26,7 @@ require 'sequel'
 require 'jdbc/mssql'  # this is optional since the driver is loaded when loading the gem
 
 DB = Sequel.conect('jdbc:sqlserver://localhost:1433;databaseName=AdventureWorks;integratedSecurity=true;')
+# DB = Sequel.conect('jdbc:sqlserver://localhost:1433;databaseName=AdventureWorks;user=MyUserName;password=*****;')
 ```
 
 
