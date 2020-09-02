@@ -5,7 +5,7 @@ module Jdbc
   module MSSQL
     def self.driver_jar
       case self.java_version
-      when '1.8'
+      when '1.8','14'
         'sqljdbc42.jar'
       when '1.7'
         'sqljdbc41.jar'
