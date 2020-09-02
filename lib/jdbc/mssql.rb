@@ -10,7 +10,7 @@ module Jdbc
       when '1.7'
         'sqljdbc41.jar'
       else
-        raise LoadError, "Version #{VERSION} of Jdbc-MSSQL requires Java 1.7 or later"
+        raise LoadError, "Version #{VERSION} of Jdbc-MSSQL requires Java 1.7 or later. Your Java version is #{self.java_version}"
       end
     end
 
